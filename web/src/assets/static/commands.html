@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chip Commands</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/assets/static/css/commands.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/static/css/site.css" />
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<!-- <script type="text/javascript" src="/assets/static/js/started.js"></script> -->
+		<script type="text/javascript" src="/assets/static/js/site.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">Chip</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="/gettingstarted">Getting Started</a></li>
+						<li><a href="/register">Register</a></li>
+						<li><a href="/commands">Commands</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="nav-pad">
+			<h4 class="container">The Crime City Battle Bot</h4>
+		</div>
+		
+		<div id="content" class="container">
+			<ul>
+				<li>
+					<p class="syntax">calc ([member|math])</p>
+					<p class="description">
+						Prints safe defense value and safe PA defense value for the specified member, 
+								or the current member if none is specified
+					<p class="description">
+						Prints the result of the given math expression 
+					</p>
+					</p>
+				</li>
+				<li>
+					<p class="syntax">end ([minutes(:[seconds])])</p>
+					<p class="description">
+						Specifies the time until the battle ends
+					</p>
+				</li>
+				<li>
+					<p class="syntax">help</p>
+					<p class="description">
+						Prints the help url
+					</p>
+				</li>
+				<li>
+					<p class="syntax">hist [syndicate]</p>
+					<p class="description">
+						Prints the recent rankings of the specified syndicate
+					</p>
+				</li>
+				<li>
+					<p class="syntax">ident "[player]"(,"[player]")...</p>
+					<p class="description">
+						Matches the user with their players
+					</p>
+					<p class="description">
+						Note: The quotation marks are important!
+					</p>
+				</li>
+				<li>
+					<p class="syntax">info ([member])</p>
+					<p class="description">
+						Prints the info of the specified member or the current member if none is specified 
+					</p>
+				</li>
+				<li>
+					<p class="syntax">intel ([syndicate])</p>
+					<p class="description">
+						Prints current intel for the specified syndicate or 
+						the active intel if none is specified and there is an active battle
+					</p>
+				</li>
+				<li>
+					<p class="syntax">mystats (u[number]) ([level]) [attack] / [defense] ([mafia])</p>
+					<p class="description">
+						Updates chips records of the current users stats
+					</p>
+				</li>
+				<li>
+					<p class="syntax">result [us]-[them]</p>
+					<p class="description">
+						Records the final score of the past battle
+					</p>
+				</li>
+				<li>
+					<p class="syntax">rollcall</p>
+					<p class="description">
+						Flags the current post as a roll call post.  It will try to be monitored for "likes"
+						users who have "liked" the post will be counted as present.  
+						Requires a groupme user_token for the group with the rollcall post
+						** Experimental - Not available for all syndicates **
+					</p>
+				</li>
+				<li>
+					<p class="syntax">[us]-[them]</p>
+					<p class="description">
+						Updates the record of the battles score.  Prints a time difference and countdown
+					</p>
+				</li>
+				<li>
+					<p class="syntax">start ([minutes])</p>
+					<p class="description">
+						Schedules a battle to start in the specified number of minutes, or a default if none is specified
+					</p>
+				</li>
+				<li>
+					<p class="syntax">status</p>
+					<p class="description">
+						Prints a summary of the current battle state
+					</p>
+				</li>
+				<li>
+					<p class="syntax">stop</p>
+					<p class="description">
+						Ends any active battles
+					</p>
+				</li>
+				<li>
+					<p class="syntax">target</p>
+					<p class="description">
+						Optimizes the active intel, only shows targets with the lowest defense values
+					</p>
+				</li>
+				<li>
+					<p class="syntax">vs [syndicate]</p>
+					<p class="description">
+						Start a battle with specified syndicate.  Prints result history, previous match results, and intel
+					</p>
+				</li>
+				<li>
+					<p class="syntax">who</p>
+					<p class="description">
+						Prints members who have chatted in the current battle session
+					</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

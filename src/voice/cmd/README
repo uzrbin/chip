@@ -1,0 +1,14 @@
+Commands to be injected into the voice module.
+
+A command must export an "exp" regexp to match the command invocation, 
+and a "run" function that dictates the behaviour of the command
+
+The run function receives the following arguments for convience:
+
+- match: The result from matching the command typed into groupme with the specified regexp
+
+- user: The user who typed the command
+
+- group: The group that should be used for output
+
+- msg: The groupme message that was sent

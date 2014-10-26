@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Edit Groups</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/assets/static/css/site.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/static/css/groups.css" />
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/static/js/groups.js"></script>
+		<script type="text/javascript" src="/assets/static/js/site.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">Chip</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="/gettingstarted">Getting Started</a></li>
+						<li><a href="/register">Register</a></li>
+						<li><a href="/commands">Commands</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="nav-pad">
+			<h4 class="container">The Crime City Battle Bot</h4>
+		</div>
+		
+		<div id="content" class="container">
+			<h3>Manage Groups For <span class="synd-name"></span></h3>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>GroupMe ID</th>
+						<th>Bot Token</th>
+						<th class="text-center">Scout</th>
+						<th class="text-center">Output</th>
+						<th class="text-center">Debug</th>
+						<th class="text-center">Edit</th>
+					</tr>
+				</thead>
+				<tbody id="group-list"></tbody>
+			</table>
+			
+			<div id="group-add-wrap">
+				<button id="group-add" class="btn btn-lg" type="submit">
+					<span class="glyphicon glyphicon-plus"></span> Add Group
+				</button>
+			</div>
+			
+			<div id="group-edit" style="display:none;">
+				<form role="form">
+					<input type="hidden" id="gid" />
+					<div class="form-group">
+						<label for="groupmeId">Groupme ID</label>
+						<input type="text" class="form-control" id="groupmeId" placeholder="Groupme ID" required>
+					</div>
+					<div class="form-group">
+						<label for="botToken">Bot Token</label>
+						<input type="text" class="form-control" id="botToken" placeholder="Bot Token" required>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="scout"> Scout
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="output"> Output
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="debug"> Debug
+						</label>
+					</div>
+					<div class="text-center">
+						<button class="btn btn-lg btn-primary" type="submit">Save</button>
+						<button id="group-edit-cancel" class="btn btn-lg btn-default" type="cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+			
+			<div id="glossary" class="col-md-6">
+				<ul>
+					<li>
+						<span class="term">Scout: </span>
+						<span class="definition">Messages in this group will be processed as intel if there is an active battle</span>
+					</li>
+					<li>
+						<span class="term">Output: </span>
+						<span class="definition">Chip will send updates to this group ("Battle will end in 5 minutes")</span></li>
+					<li>
+						<span class="term">Debug: </span>
+						<span class="definition">
+							Chip will print information about operations he is performing 
+							to this group ("Member created", "Player matched", "Stats updated").
+						</span>
+						<div style="font-style: italic;">
+							Spam mode.  Not recommended for public groups.
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

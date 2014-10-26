@@ -1,0 +1,29 @@
+#content {
+	padding: 40px 0;
+}
+
+#content ul {
+	list-style-type: none;
+	font-size: 1.2em;
+}
+
+#content li {
+	margin-bottom: 15px;
+	padding: 20px 40px 15px 40px;
+	background-color: #E0E4CC;
+	border-radius: 10px;
+}
+
+p.syntax {
+	margin-left: 15px;
+	margin-bottom: 15px;
+	font-size: 1.1em;
+	font-family: "Courier New";
+	color: #F38630;
+	font-weight: bold;
+}
+
+p.description {
+	margin-bottom: 5px;
+	max-width: 650px;
+}

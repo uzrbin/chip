@@ -1,0 +1,106 @@
+	calc ([member|math])
+	
+	Prints safe defense value and safe PA defense value for the specified member, 
+			or the current member if none is specified
+			
+	Prints the result of the given math expression 
+
+----
+
+	end ([minutes(:[seconds])])
+	  
+	specifies the time until
+
+----
+
+	help
+	
+	Prints the help url
+	
+----
+
+	hist [syndicate]
+	  
+	Prints the recent rankings of the specified syndicate
+
+----
+
+	ident "[player]"(,"[player]")...
+	
+	Matches the user with their players.
+	
+----
+
+	info ([member])
+  
+	Prints the info of the specified member or the current member if none is specified 
+  
+----
+
+	intel ([syndicate])
+	
+	Prints current intel for the specified syndicate or 
+		the active intel if none is specified and there is an active battle
+		
+----
+
+	mystats (u[number]) ([level]) [attack] / [defense] ([mafia])
+	
+	Updates chips records of the current users stats
+	
+----
+
+	result [us]-[them]
+	
+	Records the final score of the past battle
+	
+----
+
+	rollcall
+	
+	Flags the current post as a roll call post.  It will try to be monitored for "likes"
+		users who have "liked" the post will be counted as present.  
+		Requires a groupme user_token for the group with the rollcall post
+		
+----
+
+	[us]-[them]
+	
+	Updates the record of the battles score.  Prints a time difference and countdown.
+	
+----
+
+	start ([minutes])
+	
+	Starts a battle in the specified number of minutes, or a default if none is specified
+	
+----
+
+	status
+	
+	Prints a summary of the current battle state
+	
+----
+
+	stop
+	
+	Ends any current battles
+
+----
+
+	target
+	
+	Optimizes the active intel, only shows targets with the lowest defense values
+	
+----
+
+	vs [syndicate]
+	
+	Start a battle with specified syndicate.  Prints result history, previous match results, and intel
+	
+----
+
+	who
+	
+	Prints members who have responded to the roll call check
+	

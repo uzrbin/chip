@@ -1,0 +1,103 @@
+
+#content ol {
+	padding: 0;
+	counter-reset: item;
+	list-style-type: none;
+	margin-bottom: 260px;
+}
+
+#content li {
+	display: block;
+	list-style-position:inside;
+	font-size: 6em;
+	font-weight: bold;
+	color: #cacaca;
+	padding-left: 40px;
+	min-height: 120px;
+}
+
+#content li:nth-child(odd) {
+	background-color: #A7DBD8;
+}
+#content li:nth-child(even) {
+	background-color: #E0E4CC;
+}
+
+#content li:first-child {
+	border-radius: 10px 10px 0 0;
+}
+
+#content li:last-child {
+	border-radius: 0 0 10px 10px;
+}
+
+#content li:before { 
+    content: counter(item) "  "; 
+    counter-increment: item;
+}
+
+#content li>div {
+	margin-top: -100px;
+	margin-left: 90px;
+	font-size: medium;
+	color: #333;
+	margin-bottom: 0;
+	font-weight: initial;
+}
+
+#install-chip {
+	text-align: center;
+	color: #FA6900;
+	font-weight: bold;
+	margin: 60px;
+	font-size: 3.2em;
+}
+
+#content h3 {
+	font-weight: bold;
+	font-size: 2em;
+	color: #F38630;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+#content h3 a {
+	text-decoration: underline;
+}
+
+#create img {
+	float: right;
+	width: 30%;
+	margin-right: 30px;
+}
+
+#create .text {
+	float: left;
+	width: 60%;
+}
+
+#add img {
+	width: 80%;
+}
+
+img {
+	margin: 10px 0 40px 0;
+}
+
+#register h3 {
+	margin: 0;
+}
+
+#chat {
+	padding-bottom: 50px;
+}
+
+.bot-url {
+	margin-bottom: 40px;
+	margin-top: 10px;
+	font-family: "Courier New";
+	font-size: 1.2em;
+	background-color: #FA6900;
+	padding: 7px 25px;
+	display: inline-block;
+}

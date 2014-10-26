@@ -1,0 +1,39 @@
+body {
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+table {
+	font-size: 1.2em;
+}
+#group-edit {
+  max-width: 350px;
+  padding: 15px;
+  margin: 20px auto 30px auto;
+  background-color: #fff;
+  border-radius: 9px;
+}
+#content {
+	padding-top: 30px;
+}
+#glossary {
+	background-color: #A7DBD8;
+	border-radius: 10px;
+}
+#glossary ul {
+	padding: 5px 0;
+	margin: 0;
+}
+#glossary li {
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+#glossary .term {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#glossary .definition {
+	
+}
+#group-add-wrap {
+	margin-bottom: 30px;
+}

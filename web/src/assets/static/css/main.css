@@ -1,0 +1,56 @@
+.chip-chat {
+	background-color: #69D2E7;
+	font-family: "Courier New";
+	float: right;
+}
+
+.me-chat {
+	background-color: #A7DBD8;
+	float: left;
+}
+
+p.chat {
+	margin: 0;
+	display: inline-block;
+	clear: both;
+	padding: 10px 30px;
+	border-radius: 12px;
+	margin-bottom: 5px;
+}
+
+.chat-session {
+	background-color: #E0E4CC;
+	padding: 25px 30px;	
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+
+.get-started {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	background-color: #FA6900;
+	color: #fff;
+	padding: 20px 40px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+a.get-started:hover {
+	color: #E0E4CC;
+	text-decoration: none;
+}
+
+h3 {
+	margin: 0 0 20px 0;
+	font-weight: bold;
+}
+
+#mission {
+	margin: 40px 0;
+	padding: 40px 150px;
+	background-color: #E0E4CC;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 2.6em;
+}

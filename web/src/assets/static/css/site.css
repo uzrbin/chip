@@ -1,0 +1,31 @@
+#nav-pad {
+	background-color: #69D2E7;
+	height: 170px;
+	padding-top: 120px;
+	padding-left: 60px;
+}
+
+nav {
+ background-color: #69D2E7;
+}
+
+nav a {
+	color: #444;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.nav li a:hover {
+	color: #fff;
+	background-color: transparent;
+}
+
+nav a.navbar-brand {
+	font-weight: normal;
+	padding-right: 100px;
+	padding-left: 40px;
+}
+
+nav a.navbar-brand:hover {
+	color: #fff;
+}
